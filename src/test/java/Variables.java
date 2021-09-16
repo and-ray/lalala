@@ -7,7 +7,7 @@ public class Variables {
     @Test
     public void calculate(){
         int c = a + b;
-        System.out.println("result = " + c);
+        System.out.println("result result  = " + c);
     }
 
 }
