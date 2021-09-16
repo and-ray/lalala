@@ -11,4 +11,9 @@ public class Variables {
         System.out.println("result = " + c);
     }
 
+    @Test
+    public void calculate2(){
+        int c = a + b + d;
+        System.out.println("result = " + c);
+    }
 }
