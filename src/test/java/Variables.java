@@ -12,7 +12,7 @@ public class Variables {
     }
 
     @Test
-    public void calculate2(){
+    public void calculate3(){
         int c = a + b + d;
         System.out.println("result = " + c);
     }
