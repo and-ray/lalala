@@ -4,6 +4,7 @@ public class Variables {
     public int a = 2;
     public int b = 8;
     public int d = 8;
+    public String hello= "Привет!";
 
     @Test
     public void calculate(){
