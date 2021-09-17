@@ -1,19 +1,13 @@
 import org.testng.annotations.Test;
 
 public class Variables {
-    public int a = 2;
-    public int b = 8;
-    public int d = 8;
+    public String text1 = "Мама мыла раму";
+    public String text2 = "Даша мыла куклу";
 
     @Test
-    public void calculate(){
-        int c = a + b + d;
-        System.out.println("result = " + c);
+    public void calculate() {
+        String result = text1 + ". " + text2 + ".";
+        System.out.println("Два предложения: " + result);
     }
 
-    @Test
-    public void calculate3(){
-        int c = a + b + d;
-        System.out.println("result = " + c);
-    }
 }
