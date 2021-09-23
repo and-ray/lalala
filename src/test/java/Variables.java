@@ -15,7 +15,7 @@ public class Variables {
 // Также подчитывает из цикла и выводит сумму всех перемноженных чисел.
 
     @Test
-    public void cycleFor() {
+    public void cycleFor1() {
 
         int a;
         int sum = 0;
@@ -34,7 +34,23 @@ public class Variables {
 // выводит число и надпись о получившемся результате деления.
 // Если не делится, выводить строку "мимо".
 
+    @Test
+    public void cycleFor2() {
+        int d;
+        for (int i = 35; i >= 4; i--) {
 
+            if (i % 3 == 0) {
+                d = i / 3;
+                System.out.println("число: " + i + ". Результат деления: " + d);
+            }
+            //  if (i % 3 != 0) { - второй вариант
+            else {
+                System.out.println("число: " + i + ". Мимо");
+            }
+        }
+
+
+    }
 
 
 // д.з. 4 - п.3
