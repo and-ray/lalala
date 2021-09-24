@@ -2,6 +2,7 @@ import org.testng.annotations.Test;
 
 import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.List;
 
 public class Variables {
@@ -75,8 +76,6 @@ public class Variables {
     }
 
 
-
-
 //д.з. 4 - п.4. цикл switch: проверка условий:
 // если в массиве из слов (берете любые 10 произвольных существительных)
 // в слове есть буква о или е, то выводим на экран "слово знакомо",
@@ -144,6 +143,19 @@ public class Variables {
 //д.з. 4 - п.5 задача на итератор.
 // найти в массиве строк, сколько раз встречается слово яблоко в составе.
 // массив: яблочко, яблочный, яблокоооо, яблонский, яблоква, яблоковый, яблоко.
+
+    @Test
+    public void Iterator() {
+        String [] words = {"яблочко", "яблочный", "яблокоооо", "яблонский", "яблоква", "яблоковый", "яблоко"};
+        String wordToSearchFor = "яблоко";
+        int count = 0;
+        for (
+                String word : words) {
+            if (word.contains (wordToSearchFor))
+                count++;
+        }
+        System.out.println("Слово 'яблоко' встречается в составе " + count + "-х" + " слов.");
+    }
 
 //д.з. 4 - п.6
 // Напишите программу, которая выводит на экран числа от 1 до 100.
