@@ -163,6 +163,16 @@ public class Variables {
 // а вместо чисел, кратных пяти — слово Buzz.
 // Если число кратно пятнадцати, то программа должна выводить слово FizzBuzz.
 
+    @Test
+    public void cycleDoWhile3() {
+
+        for (int i = 1; i <= 100; i++) {
+
+            System.out.println("результат = " + i);
+        }
+    }
+
+
 
   /*  @Test
     public void cycleIf() {
