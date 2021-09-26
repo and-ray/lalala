@@ -171,13 +171,13 @@ public class Variables {
         for (int i = 1; i <= 100; i++) {
             if (i % 3 == 0) {
                 if (i % 5 == 0) {
-                    System.out.println(i + ": FizzBuzz");
+                    System.out.println("FizzBuzz");
                 } else {
-                    System.out.println(i + ": Fizz");
+                    System.out.println("Fizz");
                 }
             } else {
                 if (i % 5 == 0) {
-                    System.out.println(i + ": Buzz");
+                    System.out.println("Buzz");
                 } else {
                     System.out.println(i);
                 }
