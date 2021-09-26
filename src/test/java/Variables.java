@@ -1,3 +1,5 @@
+//import com.sun.xml.internal.ws.api.model.wsdl.WSDLOutput;
+
 import org.testng.annotations.Test;
 
 import java.nio.charset.StandardCharsets;
@@ -146,12 +148,12 @@ public class Variables {
 
     @Test
     public void Iterator() {
-        String [] words = {"яблочко", "яблочный", "яблокоооо", "яблонский", "яблоква", "яблоковый", "яблоко"};
+        String[] words = {"яблочко", "яблочный", "яблокоооо", "яблонский", "яблоква", "яблоковый", "яблоко"};
         String wordToSearchFor = "яблоко";
         int count = 0;
         for (
                 String word : words) {
-            if (word.contains (wordToSearchFor))
+            if (word.contains(wordToSearchFor))
                 count++;
         }
         System.out.println("Слово 'яблоко' встречается в составе " + count + "-х" + " слов.");
@@ -164,13 +166,30 @@ public class Variables {
 // Если число кратно пятнадцати, то программа должна выводить слово FizzBuzz.
 
     @Test
-    public void cycleDoWhile3() {
+    public void cycleFor3() {
 
         for (int i = 1; i <= 100; i++) {
+            if (i % 3 == 0) {
+                if (i % 5 == 0) {
+                    System.out.println(i + ": FizzBuzz");
+                } else {
+                    System.out.println(i + ": Fizz");
+                }
+            } else {
+                if (i % 5 == 0) {
+                    System.out.println(i + ": Buzz");
+                } else {
+                    System.out.println(i);
+                }
+            }
 
-            System.out.println("результат = " + i);
         }
     }
+
+
+
+
+
 
 
 
